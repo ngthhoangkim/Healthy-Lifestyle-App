@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Admin">
+    <!--head-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <!--txt user name-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="8"
+            android:fontFamily="@font/bold"
+            android:gravity="center|left"
+            android:text="Admin"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <!-- logout-->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/logout"
+            android:id="@+id/admin_logout"/>
+    </LinearLayout>
+    <!--main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+        <!--Quản lý gói khám-->
+        <LinearLayout
+            android:id="@+id/bnt_Agoikham"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="Quản lý gói khám"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:src="@drawable/shoopingbag"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <!--Quản lý lịch khám-->
+        <LinearLayout
+            android:id="@+id/lichkham"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="Quản lý lịch khám"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:src="@drawable/schedule"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <!--Quản lý bác sĩ -->
+        <LinearLayout
+            android:id="@+id/qlbs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="Quản lý bác sĩ"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:src="@drawable/doctor"
+                android:padding="10dp"/>
+        </LinearLayout>
+        <!--Tra cứu bệnh nhân-->
+        <LinearLayout
+            android:id="@+id/bnt_benhnhan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="Tra cứu bệnh nhân"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:src="@drawable/patient"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--fotter-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <LinearLayout
+            android:id="@+id/icon_home_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/home" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/icon_schedule_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/schedule" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/icon_goikham_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/shoopingbag" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/icon_benhnha_a"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_user_a"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

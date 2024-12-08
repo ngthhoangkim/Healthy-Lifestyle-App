@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phuHuynhItemCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:paddingBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/theAnhSanPham"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#1ed760"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/anhSanPham"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxWidth="50dp"
+                    android:maxHeight="50dp"
+                    android:src="@mipmap/ic_launcher_round" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/vanBanBacSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Bác Sĩ : "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/theAnhSanPham"
+                app:layout_constraintTop_toTopOf="@+id/theAnhSanPham" />
+
+            <TextView
+                android:id="@+id/maDonHang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Nguyễn Xuân Diệu "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/vanBanBacSi"
+                app:layout_constraintStart_toEndOf="@+id/vanBanBacSi"
+                app:layout_constraintTop_toTopOf="@+id/vanBanBacSi"
+                app:layout_constraintWidth_percent="0.5" />
+
+
+            <TextView
+                android:id="@+id/tinhTrangBenhVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:text="bệnh viện  "
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/theAnhSanPham"
+                app:layout_constraintTop_toBottomOf="@+id/vanBanBacSi" />
+
+            <TextView
+                android:id="@+id/tinhTrangKhoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
+                android:text="khoa "
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/theAnhSanPham"
+                app:layout_constraintTop_toBottomOf="@+id/vanBanBacSi" />
+
+            <TextView
+                android:id="@+id/vanBanGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="8dp"
+                android:text="thời gian :"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tinhTrangKhoa"
+                app:layout_constraintVertical_bias="0.568" />
+
+            <TextView
+                android:id="@+id/tongGiaDonHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:30"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/vanBanGia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.121"
+                app:layout_constraintStart_toEndOf="@+id/vanBanGia"
+                app:layout_constraintTop_toTopOf="@+id/vanBanGia"
+                app:layout_constraintVertical_bias="1.0" />
+
+            nPham"
+                app:layout_constraintWidth_percent="0.4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

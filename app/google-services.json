@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107137579661",
+    "project_id": "app-healthy-lifestye",
+    "storage_bucket": "app-healthy-lifestye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107137579661:android:8bbcc6c44421fee1bc00c4",
+        "android_client_info": {
+          "package_name": "com.example.app_healthylifestyle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVedy4gzomg5pprusgPBXi7pNm0GefSKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

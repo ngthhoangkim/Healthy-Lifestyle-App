@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_HealthyLifestyle"
+        tools:targetApi="31">
+        <activity
+            android:name=".goi_kham_ban_dat"
+            android:exported="false" />
+        <activity
+            android:name=".chon_thoi_gian_kham"
+            android:exported="false" />
+        <activity
+            android:name=".them_lich_kham"
+            android:exported="false" />
+        <activity
+            android:name=".quan_li_lich_kham"
+            android:exported="false" />
+        <activity
+            android:name=".Chi_tiet_goi_kham"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.List_user"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.List_Chuyen_khoa"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.List_Doctor"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.List"
+            android:exported="false" />
+        <activity
+            android:name=".Quan_ly_chuyen_khoa"
+            android:exported="false" />
+        <activity
+            android:name=".Quan_ly_bac_si"
+            android:exported="false" />
+        <activity
+            android:name=".chisosuckhoe.Giac_ngu"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.List_package"
+            android:exported="false" />
+        <activity
+            android:name=".Quan_ly_goi_kham"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.Delete"
+            android:exported="false" />
+        <activity
+            android:name=".CRUD.Update"
+            android:exported="false" />
+        <activity
+            android:name=".Tra_cuu_benh_nhan"
+            android:exported="false" />
+        <activity
+            android:name=".chisosuckhoe.Cups_manager"
+            android:exported="false" />
+        <activity
+            android:name=".chisosuckhoe.bmi"
+            android:exported="false" />
+        <activity
+            android:name=".chisosuckhoe.drink"
+            android:exported="false" />
+        <activity
+            android:name=".chisosuckhoe.Sleep"
+            android:exported="false" />
+        <activity
+            android:name=".chisosuckhoe.chi_so_suc_khoe"
+            android:exported="false" />
+        <activity
+            android:name=".goi_kham"
+            android:exported="false" />
+        <activity
+            android:name=".Dat_lich_kham"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".thong_tin_ca_nhan"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".dang_ky"
+            android:exported="false" />
+        <activity
+            android:name=".dang_nhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

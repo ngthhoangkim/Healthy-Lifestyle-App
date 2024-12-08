@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dCartview"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardElevation="8dp"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradient">
+        <!--show name-->
+        <TextView
+            android:id="@+id/item_name_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên bác sĩ"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular"
+            android:layout_marginLeft="10dp"/>
+        <!--show chuyên khoa-->
+        <TextView
+            android:id="@+id/item_chuyenkhoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chuyên khoa"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/regular"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

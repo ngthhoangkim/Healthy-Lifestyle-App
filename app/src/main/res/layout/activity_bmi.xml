@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chisosuckhoe.bmi"
+    android:weightSum="10"
+    android:orientation="vertical">
+<!--    txt-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BMI"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/bold"/>
+    </LinearLayout>
+<!--input-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="vertical">
+<!--        chiều cao-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Nhập chiều cao của bạn"
+            android:gravity="center|start"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/input"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Chiều cao"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:maxLines="1"/>
+<!--        cân nặng-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Nhập cân nặng của bạn"
+            android:gravity="center|start"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/input"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Cân nặng"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+<!--result-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/bold"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiển thị kết quả!"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/regular"/>
+        </ScrollView>
+
+    </LinearLayout>
+<!--menu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/schedule" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/shoopingbag" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/infor_user"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
